@@ -1,0 +1,10 @@
+C:\Users\ethan\Documents\trytwo\target\release\deps\scrypto_derive-a3b0d26efe5d800e.dll: C:\Users\ethan\.cargo\git\checkouts\radixdlt-scrypto-1833d92590086ce0\6c17276\scrypto-derive\src\lib.rs C:\Users\ethan\.cargo\git\checkouts\radixdlt-scrypto-1833d92590086ce0\6c17276\scrypto-derive\src\ast.rs C:\Users\ethan\.cargo\git\checkouts\radixdlt-scrypto-1833d92590086ce0\6c17276\scrypto-derive\src\blueprint.rs C:\Users\ethan\.cargo\git\checkouts\radixdlt-scrypto-1833d92590086ce0\6c17276\scrypto-derive\src\import.rs C:\Users\ethan\.cargo\git\checkouts\radixdlt-scrypto-1833d92590086ce0\6c17276\scrypto-derive\src\non_fungible_data.rs C:\Users\ethan\.cargo\git\checkouts\radixdlt-scrypto-1833d92590086ce0\6c17276\scrypto-derive\src\utils.rs
+
+C:\Users\ethan\Documents\trytwo\target\release\deps\scrypto_derive-a3b0d26efe5d800e.d: C:\Users\ethan\.cargo\git\checkouts\radixdlt-scrypto-1833d92590086ce0\6c17276\scrypto-derive\src\lib.rs C:\Users\ethan\.cargo\git\checkouts\radixdlt-scrypto-1833d92590086ce0\6c17276\scrypto-derive\src\ast.rs C:\Users\ethan\.cargo\git\checkouts\radixdlt-scrypto-1833d92590086ce0\6c17276\scrypto-derive\src\blueprint.rs C:\Users\ethan\.cargo\git\checkouts\radixdlt-scrypto-1833d92590086ce0\6c17276\scrypto-derive\src\import.rs C:\Users\ethan\.cargo\git\checkouts\radixdlt-scrypto-1833d92590086ce0\6c17276\scrypto-derive\src\non_fungible_data.rs C:\Users\ethan\.cargo\git\checkouts\radixdlt-scrypto-1833d92590086ce0\6c17276\scrypto-derive\src\utils.rs
+
+C:\Users\ethan\.cargo\git\checkouts\radixdlt-scrypto-1833d92590086ce0\6c17276\scrypto-derive\src\lib.rs:
+C:\Users\ethan\.cargo\git\checkouts\radixdlt-scrypto-1833d92590086ce0\6c17276\scrypto-derive\src\ast.rs:
+C:\Users\ethan\.cargo\git\checkouts\radixdlt-scrypto-1833d92590086ce0\6c17276\scrypto-derive\src\blueprint.rs:
+C:\Users\ethan\.cargo\git\checkouts\radixdlt-scrypto-1833d92590086ce0\6c17276\scrypto-derive\src\import.rs:
+C:\Users\ethan\.cargo\git\checkouts\radixdlt-scrypto-1833d92590086ce0\6c17276\scrypto-derive\src\non_fungible_data.rs:
+C:\Users\ethan\.cargo\git\checkouts\radixdlt-scrypto-1833d92590086ce0\6c17276\scrypto-derive\src\utils.rs:

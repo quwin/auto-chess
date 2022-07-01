@@ -1,0 +1,2 @@
+cargo:rustc-env=TYPENUM_BUILD_CONSTS=c:\Users\ethan\Documents\trytwo\target\rls\debug\build\typenum-d888e37062fff8f5\out\consts.rs
+cargo:rustc-env=TYPENUM_BUILD_OP=c:\Users\ethan\Documents\trytwo\target\rls\debug\build\typenum-d888e37062fff8f5\out\op.rs

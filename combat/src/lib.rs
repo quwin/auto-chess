@@ -11,9 +11,8 @@ blueprint! {
         pub game_data: structs::GameData,
 
     }
-    impl AutoChess {
-        pub fn new(account_nft: ResourceAddress, system_badge: ResourceAddress) -> ComponentAddress {
-            // Sets values for instantiation
+    impl AutoChessCombat {
+        pub fn new(account_nft: ResourceAddress, system_badge: Bucket) -> ComponentAddress {
             Self {
                 system_vault: Vault::with_bucket(system_badge),
                 account_nft,
@@ -25,13 +24,11 @@ blueprint! {
                     gear_data: LazyMap::new(),
                     matchmaking_data: LazyMap::new(),
                     matchmaking_amounts: LazyMap::new(),
-                    game_price,
-                    account_number: 0,
                     starting_gold: 4,
-                    starting_health: dec!(100),
+                    starting_health: dec!("100"),
                     starting_shop_fighters: 5,
                     starting_shop_gear: 3,
-                    health_on_loss: dec!(10),
+                    health_on_loss: dec!("10"),
                     wins_for_victory: 10,
                     rounds_for_shop_increase: 2,
                     rounds_for_bench_increase: 3,
@@ -43,18 +40,17 @@ blueprint! {
         }
         pub fn start_gameplay(&mut self, account_proof: Proof) {
             assert!(account_proof.resource_address() == self.account_nft);
-            let key_bucket: Bucket = self.system_vault.take(1);
             let account_data: structs::Account = account_proof.non_fungible().data();
             let combat_data: structs::Combat = account_data.combat_info;
             assert!(combat_data.state == false);
             let mut new_shop_data = structs::Shop {
-                fighters: Vec::from([]),
-                gear: Vec::from([]),
+                fighters: Vec::new(),
+                gear: Vec::new(),
             };
-            for _x in 0..self.game_data.starting_shop_fighters {
+            for _ in 0..self.game_data.starting_shop_fighters {
                 new_shop_data.fighters.push(Some(self.random_animal(1)));
             };
-            for _y in 0..self.game_data.starting_shop_gear {
+            for _ in 0..self.game_data.starting_shop_gear {
                 new_shop_data.gear.push(Some(self.random_gear(1)));
             };
             let new_combat_data = structs::Combat {
@@ -75,8 +71,7 @@ blueprint! {
                 combat_info: new_combat_data,
                 shop_info: new_shop_data,
             };
-            self.system_vault.authorize(|| account_proof.non_fungible().update_data(new_account_data));
-            self.system_vault.put(key_bucket);
+            self.system_vault.authorize(|| account_proof.non_fungible().update_data(new_account_data))
         }
         pub fn gameplay(&mut self, account_proof: Proof, mut actions: Vec<structs::Actions>, choice: structs::Choices) {
             assert!(account_proof.resource_address() == self.account_nft);

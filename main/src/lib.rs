@@ -6,9 +6,8 @@ blueprint! {
         collected_xrd: Vault,
         // NFT to store data between rounds
         account_nft: ResourceAddress,
-        // Vault to hold with badge for system actions
-        system_vault: Vault,
         developer_vault: Vault,
+        system_badge: ResourceAddress,
 
     }
     impl AutoChess {
@@ -26,9 +25,9 @@ blueprint! {
                 .metadata("name", "system")
                 .divisibility(DIVISIBILITY_NONE)
                 .mintable(developer_rule.clone(), MUTABLE(developer_rule.clone()))
-                .initial_supply(1);
+                .no_initial_supply();
 
-            let system_rule: AccessRule = rule!(require(system_badge.resource_address()));
+            let system_rule: AccessRule = rule!(require(system_badge));
 
             // NFT for account data
             let account_nft = ResourceBuilder::new_non_fungible()
@@ -41,10 +40,10 @@ blueprint! {
 
             // Sets values for instantiation
             let instantiate = Self {
-                system_vault: Vault::with_bucket(system_badge),
                 developer_vault: Vault::with_bucket(developer_badge.take(9999)),
                 collected_xrd: Vault::new(RADIX_TOKEN),
                 account_nft,
+                system_badge,
             }
             .instantiate();
             // Sets access for various methods
@@ -61,7 +60,7 @@ blueprint! {
             self.developer_vault.take(amount)
         }
         pub fn mint_system_badge(&mut self, amount: Decimal) -> Bucket {
-            borrow_resource_manager!(self.system_vault.resource_address()).mint(amount)
+            borrow_resource_manager!(self.system_badge).mint(amount)
         }
     }
 }

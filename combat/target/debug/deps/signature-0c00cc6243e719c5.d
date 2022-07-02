@@ -1,0 +1,11 @@
+/Users/ethantran/Documents/auto-chess/combat/target/debug/deps/signature-0c00cc6243e719c5.rmeta: /Users/ethantran/.cargo/registry/src/github.com-1ecc6299db9ec823/signature-1.4.0/src/lib.rs /Users/ethantran/.cargo/registry/src/github.com-1ecc6299db9ec823/signature-1.4.0/src/error.rs /Users/ethantran/.cargo/registry/src/github.com-1ecc6299db9ec823/signature-1.4.0/src/signature.rs /Users/ethantran/.cargo/registry/src/github.com-1ecc6299db9ec823/signature-1.4.0/src/signer.rs /Users/ethantran/.cargo/registry/src/github.com-1ecc6299db9ec823/signature-1.4.0/src/verifier.rs
+
+/Users/ethantran/Documents/auto-chess/combat/target/debug/deps/libsignature-0c00cc6243e719c5.rlib: /Users/ethantran/.cargo/registry/src/github.com-1ecc6299db9ec823/signature-1.4.0/src/lib.rs /Users/ethantran/.cargo/registry/src/github.com-1ecc6299db9ec823/signature-1.4.0/src/error.rs /Users/ethantran/.cargo/registry/src/github.com-1ecc6299db9ec823/signature-1.4.0/src/signature.rs /Users/ethantran/.cargo/registry/src/github.com-1ecc6299db9ec823/signature-1.4.0/src/signer.rs /Users/ethantran/.cargo/registry/src/github.com-1ecc6299db9ec823/signature-1.4.0/src/verifier.rs
+
+/Users/ethantran/Documents/auto-chess/combat/target/debug/deps/signature-0c00cc6243e719c5.d: /Users/ethantran/.cargo/registry/src/github.com-1ecc6299db9ec823/signature-1.4.0/src/lib.rs /Users/ethantran/.cargo/registry/src/github.com-1ecc6299db9ec823/signature-1.4.0/src/error.rs /Users/ethantran/.cargo/registry/src/github.com-1ecc6299db9ec823/signature-1.4.0/src/signature.rs /Users/ethantran/.cargo/registry/src/github.com-1ecc6299db9ec823/signature-1.4.0/src/signer.rs /Users/ethantran/.cargo/registry/src/github.com-1ecc6299db9ec823/signature-1.4.0/src/verifier.rs
+
+/Users/ethantran/.cargo/registry/src/github.com-1ecc6299db9ec823/signature-1.4.0/src/lib.rs:
+/Users/ethantran/.cargo/registry/src/github.com-1ecc6299db9ec823/signature-1.4.0/src/error.rs:
+/Users/ethantran/.cargo/registry/src/github.com-1ecc6299db9ec823/signature-1.4.0/src/signature.rs:
+/Users/ethantran/.cargo/registry/src/github.com-1ecc6299db9ec823/signature-1.4.0/src/signer.rs:
+/Users/ethantran/.cargo/registry/src/github.com-1ecc6299db9ec823/signature-1.4.0/src/verifier.rs:

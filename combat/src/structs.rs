@@ -125,8 +125,6 @@ pub struct GameData {
     pub gear_data: LazyMap<(u128, u8), GearInfo>,
     pub matchmaking_amounts: LazyMap<u8, u128>,
     pub matchmaking_data: LazyMap<(u128, u8), Vec<Option<FighterInfo>>>,
-    pub game_price: Decimal,
-    pub account_number: u64,
     pub starting_gold: u8,
     pub starting_health: Decimal,
     pub starting_shop_fighters: usize,

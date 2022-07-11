@@ -1,2 +1,0 @@
-cargo:rustc-env=TYPENUM_BUILD_CONSTS=C:\Users\ethan\Documents\trytwo\target\wasm32-unknown-unknown\release\build\typenum-88081c52110bf4d6\out\consts.rs
-cargo:rustc-env=TYPENUM_BUILD_OP=C:\Users\ethan\Documents\trytwo\target\wasm32-unknown-unknown\release\build\typenum-88081c52110bf4d6\out\op.rs
